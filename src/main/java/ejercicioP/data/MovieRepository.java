@@ -7,8 +7,7 @@ import java.util.Collection;
 
 public interface MovieRepository extends JpaRepository<Movie, Integer> {
 
-    Movie findByID(int id);
+    public Movie findByNameContaining(String name);
 
-    void saveOrUpdate(Movie movie);
 
 }
